@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.ansen.http'//com.github.{你的的账号名}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    api 'com.squareup.okhttp3:okhttp:4.9.3' //okhttp
+    api 'com.google.code.gson:gson:2.8.6' //解析jsons数据
+    api 'io.github.lizhangqu:coreprogress:1.0.2' //上传下载回调监听
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_create_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建数据库"
+        android:onClick="createDb"/>
+
+    <Button
+        android:id="@+id/btn_add_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addRecord"
+        android:text="往学生表添加数据"/>
+
+    <Button
+        android:id="@+id/btn_update_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="updateRecord"
+        android:text="更新某条记录数据"/>
+
+    <Button
+        android:id="@+id/btn_find_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="findStudent"
+        android:text="查找学生表数据"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="删除学生表的数据"/>
+</LinearLayout>

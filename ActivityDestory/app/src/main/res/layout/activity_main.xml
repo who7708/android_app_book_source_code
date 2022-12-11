@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finish结束当前Activity"/>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="System.exit终止程序"/>
+
+    <Button
+        android:id="@+id/btn_kill_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="killProcess杀掉程序进程"/>
+
+
+    <Button
+        android:id="@+id/btn_start_first"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启一个新的Activity"/>
+</LinearLayout>

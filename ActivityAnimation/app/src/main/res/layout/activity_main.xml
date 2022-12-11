@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用overridePendingTransition方法实现activity切换动画" />
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用overridePendingTransition方法实现自定义动画" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="以下是Android 5.0版本以后才有的Activity过渡动画"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_explode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explode效果" />
+
+    <Button
+        android:id="@+id/btn_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide效果" />
+
+    <Button
+        android:id="@+id/btn_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade效果" />
+
+    <Button
+        android:id="@+id/btn_shared_element"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Element（共享元素）效果" />
+
+    <Button
+        android:id="@+id/btn_custom_shared_element"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff9900"
+        android:textColor="#FFFFFF"
+        android:text="自定义Shared Element（共享元素）效果" />
+</LinearLayout>

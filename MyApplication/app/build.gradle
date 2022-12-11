@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.ansen.myapplication"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    //点击「Run App」按钮时自动打包签名配置
+    signingConfigs {
+        debug {//debug签名配置
+            keyAlias '123456'//密钥标示
+            keyPassword '123456'//密钥密码
+            storePassword '123456'//签名文件密码
+            storeFile file('../jks/myapplication.jks')//这里我用的相对路径，放在了项目下的jks目录
+        }
+
+        release{//在这里可以配置release版本签名信息
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "baidu"
+    //不同渠道
+    productFlavors {
+        wandoujia {//豌豆荚市场包
+            //自定义变量  参数1:变量类型  参数2:变量名称  参数3:变量值
+            buildConfigField "String", "FR", "\"wandoujia\""
+        }
+        baidu {//百度市场包
+            buildConfigField "String", "FR", "\"baidu\""
+        }
+        oppo {//oppo市场包
+            buildConfigField "String", "FR", "\"oppo\""
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation project(':my-library-module')//依赖本地module
+}
