@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ansen.activityanimation.MainActivity">
+        <activity
+            android:name="com.ansen.activityanimation.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +19,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.ansen.activityanimation.SecondActivity"/>
-        <activity android:name="com.ansen.activityanimation.ThreeActivity"/>
-        <activity android:name="com.ansen.activityanimation.ExplodeActivity"/>
-        <activity android:name="com.ansen.activityanimation.SlideActivity"/>
-        <activity android:name="com.ansen.activityanimation.FadeActivity"/>
-        <activity android:name="com.ansen.activityanimation.SharedElementActivity"/>
-        <activity android:name="com.ansen.activityanimation.SecondShareElemActivity"/>
-        <activity android:name="com.ansen.activityanimation.CustomSharedElementActivity"/>
+        <activity android:name="com.ansen.activityanimation.SecondActivity" />
+        <activity android:name="com.ansen.activityanimation.ThreeActivity" />
+        <activity android:name="com.ansen.activityanimation.ExplodeActivity" />
+        <activity android:name="com.ansen.activityanimation.SlideActivity" />
+        <activity android:name="com.ansen.activityanimation.FadeActivity" />
+        <activity android:name="com.ansen.activityanimation.SharedElementActivity" />
+        <activity android:name="com.ansen.activityanimation.SecondShareElemActivity" />
+        <activity android:name="com.ansen.activityanimation.CustomSharedElementActivity" />
     </application>
 
 </manifest>
