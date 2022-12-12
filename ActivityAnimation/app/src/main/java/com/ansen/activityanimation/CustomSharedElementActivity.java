@@ -2,7 +2,7 @@ package com.ansen.activityanimation;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.transition.ArcMotion;
 import android.transition.ChangeBounds;
 import android.view.View;
