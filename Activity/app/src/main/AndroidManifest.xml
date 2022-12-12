@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.ansen.activity.SecondActivity" />
+        <activity android:exported="true" android:name="com.ansen.activity.SecondActivity" />
         <activity
             android:name="com.ansen.activity.ThreeActivity"
             android:exported="true">
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FourActivity" />
+        <activity android:exported="true" android:name=".FourActivity" />
     </application>
 
 </manifest>

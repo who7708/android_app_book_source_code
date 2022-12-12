@@ -12,7 +12,7 @@
             android:name=".activity.MainActivity"
             android:label="@string/app_name" />
 
-        <activity android:name=".activity.LauncherActivity">
+        <activity android:exported="true" android:name=".activity.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
