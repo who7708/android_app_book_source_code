@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 31
+    
 
     defaultConfig {
         applicationId "com.example.textview"
         minSdkVersion 8
-        targetSdkVersion 18
+        targetSdkVersion 31
     }
 
     buildTypes {
