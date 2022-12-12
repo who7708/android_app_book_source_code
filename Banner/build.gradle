@@ -2,11 +2,6 @@
 
 buildscript {
     repositories {
-        //阿里云的镜像库
-        maven {
-            url "http://maven.aliyun.com/nexus/content/groups/public/"
-        }
-
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://jitpack.io' }
@@ -21,10 +16,6 @@ buildscript {
 
 allprojects {
     repositories {
-        //阿里云的镜像库
-        maven {
-            url "http://maven.aliyun.com/nexus/content/groups/public/"
-        }
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://jitpack.io' }
