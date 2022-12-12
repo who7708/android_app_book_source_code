@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +19,16 @@
         </activity>
 
         <activity android:name="com.ansen.activity.SecondActivity" />
-        <activity android:name="com.ansen.activity.ThreeActivity" >
+        <activity
+            android:name="com.ansen.activity.ThreeActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="com.ansen.activity.ThreeActivity"/>
+                <action android:name="com.ansen.activity.ThreeActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".FourActivity"/>
+        <activity android:name=".FourActivity" />
     </application>
 
 </manifest>
