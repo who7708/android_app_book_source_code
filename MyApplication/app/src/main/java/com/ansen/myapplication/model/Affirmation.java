@@ -1,5 +1,6 @@
 package com.ansen.myapplication.model;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 
 /**
@@ -12,8 +13,12 @@ public class Affirmation {
     @StringRes
     private int stringResourceId;
 
-    public Affirmation(int stringResourceId) {
+    @DrawableRes
+    private int imageResourceId;
+
+    public Affirmation(int stringResourceId, int imageResourceId) {
         this.stringResourceId = stringResourceId;
+        this.imageResourceId = imageResourceId;
     }
 
     public int getStringResourceId() {
@@ -22,5 +27,13 @@ public class Affirmation {
 
     public void setStringResourceId(int stringResourceId) {
         this.stringResourceId = stringResourceId;
+    }
+
+    public int getImageResourceId() {
+        return imageResourceId;
+    }
+
+    public void setImageResourceId(int imageResourceId) {
+        this.imageResourceId = imageResourceId;
     }
 }
