@@ -1,4 +1,4 @@
-package com.ansen.myapplication;
+package com.ansen.myapplication.ui;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,7 +7,9 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.ansen.myapplication.R;
 import com.ansen.myapplication.databinding.ActivityBottomNavBinding;
+import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -29,7 +31,10 @@ public class BottomNavActivity extends AppCompatActivity {
         bottomNavView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                BadgeDrawable badge = bottomNavView.getOrCreateBadge(item.getItemId());
+                badge.setNumber(100);
                 Log.d(TAG, "onNavigationItemSelected: " + item.getTitle());
+                // 选择是否生效
                 return true;
             }
         });
@@ -40,4 +45,5 @@ public class BottomNavActivity extends AppCompatActivity {
             }
         });
     }
+
 }

@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ansen.myapplication.databinding.ActivityMainBinding;
+import com.ansen.myapplication.ui.BottomNavActivity;
 
 public class MainActivity extends AppCompatActivity {
 

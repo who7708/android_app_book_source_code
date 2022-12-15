@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BottomNavApp">
         <activity
-            android:name=".BottomNavActivity"
+            android:name=".ui.BottomNavActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
