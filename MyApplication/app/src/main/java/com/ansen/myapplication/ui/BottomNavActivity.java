@@ -6,7 +6,6 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -31,8 +30,6 @@ import java.util.List;
 public class BottomNavActivity extends AppCompatActivity {
 
     private static final String TAG = BottomNavActivity.class.getSimpleName();
-
-    private Toolbar mToolbar;
 
     /**
      * menu中所有的fragment
@@ -100,11 +97,6 @@ public class BottomNavActivity extends AppCompatActivity {
         // 默认进行的fragment
         ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), mFragmentList.get(0), R.id.fragment);
         mCurrentFragment = mFragmentList.get(0);
-
-        // 设置自定义toolBar
-        mToolbar = mBinding.toolbar;
-        setSupportActionBar(mToolbar);
-        mToolbar.setTitle(getString(R.string.menu_home));
 
         // 底部导航
         BottomNavigationView bottomNavView = mBinding.bottomNavView;
