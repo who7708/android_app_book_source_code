@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_home">Home</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_person">Personal</string>
+    <string name="menu_center">Center</string>
+    <string name="menu_null">Nothing</string>
+</resources>

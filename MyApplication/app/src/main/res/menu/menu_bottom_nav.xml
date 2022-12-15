@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/menu_item_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/menu_dashboard" />
+
+    <item
+        android:id="@+id/menu_item_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/menu_notifications" />
+
+    <item
+        android:id="@+id/menu_item_person"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/menu_person" />
+
+    <!--<item-->
+    <!--    android:id="@+id/menu_item_bc_task"-->
+    <!--    android:icon="@drawable/ic_baseline_task_alt_24"-->
+    <!--    android:title="权益任务" />-->
+
+    <!--<item-->
+    <!--    android:id="@+id/menu_item_bc_order"-->
+    <!--    android:icon="@drawable/ic_baseline_attach_money_24"-->
+    <!--    android:title="订单管理" />-->
+
+</menu>

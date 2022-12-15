@@ -9,11 +9,18 @@ import com.blankj.utilcode.util.Utils;
  * @version 1.0.0
  * @date 2020/6/9
  */
-public class MyApplication extends Application {
+public class MyApp extends Application {
+    private static MyApp mInstance;
+
+    public static MyApp getInstance() {
+        return mInstance;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
         // 初始化 AndroidUtilCode
         Utils.init(this);
+        mInstance = this;
     }
 }
