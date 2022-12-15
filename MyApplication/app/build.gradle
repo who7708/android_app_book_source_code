@@ -69,5 +69,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
+    // aad lombok, 如果安装lombok插件，则代码提示就会无效
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
     // implementation project(':my-library-module')//依赖本地module
 }
